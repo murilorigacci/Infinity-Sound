@@ -77,10 +77,12 @@ body {
   color: rgba(255, 255, 255, 0.59);
 
   font-family: "Days One";
-  font-size: 20px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 10rem;
+  margin-top: 5rem;
 }
 
 .hero-texto h1 {
@@ -93,5 +95,5 @@ body {
 .hero-imagens img {
   width: 80rem;
  margin-top: -12rem;
-  margin-left: 20rem;
+  margin-left: 30rem;
 }
