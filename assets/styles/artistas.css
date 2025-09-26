@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+    max-width: 2200px; /* Largura máxima para centralizar o conteúdo */
     margin: 0 auto;
     padding: 20px;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .logo img {
-    width: 30px; /* Ajuste o tamanho do ícone */
+    width: 300px; /* Ajuste o tamanho do ícone */
     margin-right: 10px;
 }
 
@@ -72,16 +72,16 @@ body {
 
 .artist-name {
     font-size: 1.1em;
-    letter-spacing: 2px;
+    letter-spacing: 12px;
     margin-bottom: 20px;
-    height: 30px; /* Garante que todos os nomes tenham a mesma altura, útil para nomes de duas linhas */
+    height: 40px; /* Garante que todos os nomes tenham a mesma altura, útil para nomes de duas linhas */
     line-height: 1.2;
 }
 
 /* Imagens dos Artistas (Circulares) */
 .artist-image-container {
-    width: 150px; /* Define o tamanho do contêiner */
-    height: 150px;
+    width: 220px; /* Define o tamanho do contêiner */
+    height: 220px; 
     border-radius: 50%; /* Torna o contêiner circular */
     overflow: hidden; /* Corta a imagem para caber no círculo */
     margin-bottom: 20px;
@@ -103,8 +103,8 @@ body {
 
 /* Capas dos Álbuns */
 .album-cover {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;  
     overflow: hidden;
     /* Ajustes específicos para a capa de 'Daisies' no Justin Bieber (se necessário) */
 }
