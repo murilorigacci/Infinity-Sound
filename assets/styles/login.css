@@ -1,8 +1,6 @@
-/*
-  CSS para a página de Login INFINITY SOUND
-*/
+ @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
-/* --- Estilos Gerais e Fundo --- */
 body {
     /* Fundo escuro roxo/azul profundo */
     background-color: #120A2F;
@@ -11,7 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: #E0E0E0; /* Cor de texto padrão claro */
-    font-family: Arial, sans-serif;
+    font-family: days one, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,13 +34,15 @@ body {
 
 
 
-.logo-icon {
-    
+.logo-icon img {
+    height: 200px;
+    margin-right: 10px;
 }
+
 
 /* --- Container de Login --- */
 .login-container {
-    /* Cor de fundo do formulário: azul escuro com leve transparência */
+   font-family: paytone one, sans-serif;
     background-color: rgba(22, 22, 70, 0.85);
     border-radius: 15px;
     padding: 40px;
@@ -175,9 +175,4 @@ h2 {
     z-index: 5;
 }
 
-
-.fundo {
-    background-image: url('../images/fundo.png');
-    background-size: cover;
-    background-position: center;
-}
+  
