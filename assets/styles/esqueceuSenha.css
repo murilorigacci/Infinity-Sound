@@ -1,0 +1,161 @@
+/* Configurações básicas */
+:root {
+    --color-primary-dark: #10152D; /* Fundo principal escuro */
+    --color-secondary-dark: #1C2746; /* Fundo do modal (mais claro que o principal) */
+    --color-accent-blue: #3E82E3; /* Cor principal do botão */
+    --color-text-light: #E0E6F0; /* Texto claro */
+    --color-text-muted: #A0B0D0; /* Texto de descrição */
+    --color-input-bg: #4B5563; /* Fundo do input (cinza escuro) */
+    --color-input-border: #6B7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Oculta a simulação de elementos 3D fora da tela */
+}
+
+/* --- Cabeçalho e Logo --- */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+.logo span {
+    margin-left: 8px;
+    letter-spacing: 1px;
+}
+
+/* --- Container Principal do Modal --- */
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.form-container {
+    background-color: var(--color-secondary-dark);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    /* Efeito de sombreamento sutil como na imagem */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Título */
+.form-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Texto de descrição */
+.form-container p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* Grupo de Input */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+    font-size: 1rem;
+    border: 1px solid var(--color-input-border);
+    border-radius: 6px;
+    background-color: var(--color-input-bg);
+    color: var(--color-text-light);
+    transition: border-color 0.3s;
+}
+
+.input-group input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--color-accent-blue);
+    box-shadow: 0 0 0 2px rgba(62, 130, 227, 0.3);
+}
+
+/* Botão de Reset */
+.reset-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color-accent-blue);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-bottom: 20px;
+}
+
+.reset-button:hover {
+    background-color: #5aa4f1; /* Um pouco mais claro no hover */
+}
+
+.reset-button:active {
+    transform: scale(0.99);
+}
+
+/* Link Cancelar */
+.cancel-link {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cancel-link:hover {
+    color: var(--color-text-light);
+    text-decoration: underline;
+}
+
+/* Simulação de fundo (apenas para escurecer o resto da tela) */
+.background-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-dark);
+    /* Um pequeno gradiente para dar profundidade, como a imagem */
+    background: radial-gradient(circle at center, #18203d 0%, var(--color-primary-dark) 70%);
+    z-index: 1;
+}
