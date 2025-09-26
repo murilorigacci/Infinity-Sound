@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0c24;
+  color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.logo span {
+  font-weight: bold;
+  color: white;
+  line-height: 1.1;
+}
+
+.menu a {
+  color: #cccccc;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+.login-btn {
+  padding: 10px 18px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  width: 662px;
+  height: 334px;
+  color: rgba(162, 162, 162, 0.92);
+  font-family: "Paytone One";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-texto {
+  width: 451px;
+  height: 124px;
+
+  color: rgba(255, 255, 255, 0.59);
+
+  font-family: "Days One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-texto h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-imagens img {
+  width: 80rem;
+ margin-top: -12rem;
+  margin-left: 20rem;
+}
