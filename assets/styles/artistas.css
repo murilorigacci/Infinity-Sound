@@ -1,0 +1,149 @@
+:root {
+    --background-color: #0d0d1b; /* Fundo azul-escuro/quase preto */
+    --text-color: #ffffff;      /* Cor do texto branco */
+    --primary-color: #00bcd4;   /* Cor do logo 'Infinity Sound' (exemplo de um azul claro) */
+    --font-family-title: 'Arial Black', sans-serif; /* Fonte para títulos maiores */
+    --font-family-body: 'Arial', sans-serif;        /* Fonte padrão */
+}
+
+/* Estilos Globais e Fundo */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family-body);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do Cabeçalho (Header) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap; /* Permite quebras em telas menores */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 30px; /* Ajuste o tamanho do ícone */
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    flex-grow: 1; /* Permite que o H1 ocupe o espaço central */
+    margin: 0;
+    font-family: var(--font-family-title);
+    letter-spacing: 4px;
+}
+
+/* Estilos da Grade de Artistas */
+.artist-grid {
+    display: flex;
+    justify-content: space-between; /* Distribui os cards uniformemente */
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.artist-card {
+    flex: 1; /* Garante que todos os cards tenham a mesma largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px; /* Largura mínima para evitar que fiquem muito pequenos */
+}
+
+.artist-name {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    height: 30px; /* Garante que todos os nomes tenham a mesma altura, útil para nomes de duas linhas */
+    line-height: 1.2;
+}
+
+/* Imagens dos Artistas (Circulares) */
+.artist-image-container {
+    width: 150px; /* Define o tamanho do contêiner */
+    height: 150px;
+    border-radius: 50%; /* Torna o contêiner circular */
+    overflow: hidden; /* Corta a imagem para caber no círculo */
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+}
+
+.artist-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+}
+
+.most-listened-text {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7); /* Texto mais sutil */
+    margin-bottom: 15px;
+}
+
+/* Capas dos Álbuns */
+.album-cover {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    /* Ajustes específicos para a capa de 'Daisies' no Justin Bieber (se necessário) */
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1000px) {
+    .artist-grid {
+        flex-wrap: wrap; /* Coloca os cards em novas linhas */
+        justify-content: center;
+    }
+
+    .artist-card {
+        width: 45%; /* Dois cards por linha em telas médias */
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .artist-card {
+        width: 100%; /* Um card por linha em telas pequenas */
+    }
+}
