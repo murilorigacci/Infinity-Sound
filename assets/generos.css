@@ -1,0 +1,141 @@
+/* RESET BÁSICO E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat como exemplo de fonte */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* HEADER E LOGO */
+.header {
+    padding-bottom: 40px;
+}
+
+.logo {
+    width: 150px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    display: block;
+}
+
+/* TÍTULO E SEPARADOR */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3); /* Linha divisória fina e clara */
+    width: 90%;
+    max-width: 900px;
+    margin: 0px auto 50px auto;
+}
+
+/* GRID DE GÊNEROS */
+.genres-grid {
+    display: grid;
+    /* 3 colunas em telas grandes */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* RESPONSIVIDADE: 1 coluna em telas menores e 2 em telas médias/grandes */
+@media (min-width: 768px) {
+    .genres-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .genres-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* CARD DE GÊNERO (ESTILO BASE) */
+.genre-card {
+    height: 250px; /* Altura fixa para os cards */
+    background-color: #333; /* Cor de fallback */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end; /* Alinha o texto na parte inferior */
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* Adiciona um overlay escuro para o texto se destacar */
+    /* Cria um gradiente sutil para escurecer a imagem na parte inferior, onde o texto está */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* EFEITO HOVER (opcional) */
+.genre-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+.genre-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+    z-index: 1;
+}
+
+
+.genre-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative; /* Coloca o texto acima do overlay */
+    z-index: 2;
+}
+
+/* IMAGENS DE FUNDO ESPECÍFICAS PARA CADA GÊNERO */
+/* **IMPORTANTE: TROQUE OS CAMINHOS DAS IMAGENS** */
+.pop-internacional {
+    background-image: url('caminho/para/pop-internacional.jpg');
+}
+
+.rock {
+    background-image: url('caminho/para/rock.jpg');
+}
+
+.eletrônica {
+    background-image: url('caminho/para/eletronica.jpg');
+}
+
+.hip-hop {
+    background-image: url('caminho/para/hip-hop.jpg');
+}
+
+.sertanejo {
+    background-image: url('caminho/para/sertanejo.jpg');
+}
+
+.reggae {
+    background-image: url('caminho/para/reggae.jpg');
+}
