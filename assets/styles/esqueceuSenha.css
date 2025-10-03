@@ -29,11 +29,11 @@ body {
 /* --- Cabeçalho e Logo --- */
 .header {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5%;
+    left: 40px;
     width: 100%;
     padding: 20px 40px;
-    z-index: 10;
+    z-index: 20;
 }
 
 .logo {
