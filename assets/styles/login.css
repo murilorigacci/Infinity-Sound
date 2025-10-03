@@ -1,22 +1,25 @@
  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
 body {
     /* Fundo escuro roxo/azul profundo */
     background-color: #120A2F;
-    background-image: url('../images/fundo.png');
+    background-image: url('../images/Gemini_Generated_Image_ocojjdocojjdocoj.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #E0E0E0; /* Cor de texto padrão claro */
     font-family: days one, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     min-height: 100vh;
-    position: relative;
 }
 
 /* --- Logo --- */
