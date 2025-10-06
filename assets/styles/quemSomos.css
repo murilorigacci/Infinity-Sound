@@ -38,6 +38,10 @@ header {
   font-size: 1.2rem;
 }
 
+.logo img {
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   list-style: none;
