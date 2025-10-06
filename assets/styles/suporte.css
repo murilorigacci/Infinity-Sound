@@ -15,7 +15,7 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "Paytone One", sans-serif;
+    font-family:'Days One', sans-serif;
     color: #fff;
     background-color: #05061D;
     background-image: url("../images/crianncas.png");
@@ -31,7 +31,7 @@
     margin: 0 auto;
 }
 
-/* --- Header e Navegação --- */
+
 
 .header {
     padding: 20px 0;
@@ -53,7 +53,9 @@
     width: 350px;
     height: auto;
     padding: 20px;
+    cursor: pointer;
   }
+
 
 .logo span {
     font-weight: bold;
@@ -179,3 +181,4 @@
     width: 200px;
     z-index: 5;
 }
+
