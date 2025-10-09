@@ -29,6 +29,9 @@ body {
     align-items: center;
     padding-bottom: 40px;
     flex-wrap: wrap; /* Permite quebras em telas menores */
+    width: 150%;
+    top: -50px;
+    left: -40px;
 }
 
 .logo {
